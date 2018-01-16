@@ -1,263 +1,265 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style>
-			/*common css*/
-			
-			li {
-				list-style-type: none;
-			}
-			
-			body {
-				margin: 0px;
-				padding: 0px;
-				font-size: 18px;
-			}
-			/*common css end*/
-			
-			.home-container {
-				width: 1263px;
-				margin: 0 auto;
-				padding: 0px;
-			}
-			/*header css start*/
-			.header-title {
-				width: 100%;
-				height: 50px;
-				background-color: rgba(0, 0, 0, .6);
-				line-height: 50px;
-			}
-			
-			.header-title ul {
-				width: 500px;
-				margin: 0px auto;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				color: #fcf5d7;
-			}
-			
-			.header-slider {
-				width: 100%;
-				height: 550px;
-			}
-			
-			.header-slider ul {
-				margin: 0px;
-				padding: 0px;
-			}
-			
-			.header-slider ul li {
-				margin: 0px;
-				padding: 0px;
-			}
-			
-			.header-search {
-				text-align: center;
-			}
-			
-			.header-search-left {
-				width: 50%;
-			}
-			
-			.header-search-left ul {
-				width: 100%;
-				margin: 0px auto;
-				display: flex;
-				flex-direction: row;
-				color: #fcf5d7;
-				background: red;
-				font-size: 14px;
-				height: 50px;
-				line-height: 50px;
-			}
-			
-			.header-search-left ul li {
-				width: 20%;
-			}
-			/*header css end*/
-			
-			.content-container {
-				width: 100%;
-				margin: 40px auto 0;
-				text-align: center;
-			}
-			
-			.about-us-zh {
-				width: 80px;
-				height: 80px;
-				background-color: #7cb930;
-				color: white;
-				font-size: 22px;
-				position: absolute;
-				left: 15%;
-				z-index: 1000;
-				margin-left: 5%;
-				margin-top: -5px;
-			}
-			
-			.about-us-zh-about {
-				display: block;
-				margin-top: 7px;
-			}
-			
-			.about-us-zh-us {
-				display: block;
-				margin-top: 2px;
-			}
-			
-			.about-us-en {
-				font-size: 34px;
-				color: #d0d0d0;
-				text-align: left;
-				margin-left: 345px
-			}
-			
-			.about-us-detail-container {
-				font-size: 17px;
-				width: 100%;
-				text-align: left;
-				display: flex;
-				line-height: 32px;
-			}
-			
-			.about-us-detail {
-				width: 920px;
-				margin: 20px auto 0;
-				color: #1f1f1f;
-				font-weight: normal;
-			}
-			
-			.green-color {
-				color: #7cb930;
-			}
-			
-			.service-standard {
-				width: 1010px;
-				display: flex;
-				flex-direction: row;
-				margin: 0px auto;
-				justify-content: space-evenly;
-			}
-			
-			.service-standard dl dt,
-			dd {
-				margin-top: 20px;
-			}
-			
-			.service-standard dl dt {}
-			
-			.service-standard dl dd:nth-child(2) {
-				margin-left: 0px;
-				font-size: 22px;
-			}
-			
-			.service-standard dl dd:nth-child(3) {
-				line-height: 32px;
-				text-align: left;
-				font-size: 16px;
-			}
-			
-			.home-middle-container {
-				margin-top: 60px;
-				display: flex;
-				flex-direction: row;
-			}
-			
-			.home-middle-right {
-				flex: 0.65;
-				display: flex;
-				flex-direction: column;
-				align-content: center;
-				background-color: #f4f4f4;
-				height: 400px;
-			}
-			
-			.home-middle-right-title {
-				flex: 0.24;
-				font-size: 24px;
-				font-weight: bold;
-				align-content: center;
-				line-height: 300%;
-			}
-			
-			.home-middle-right-middle {
-				flex: 0.24;
-				margin-top: -30px;
-			}
-			
-			.home-middle-right-content {
-				flex: 0.52;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-evenly;
-				margin: 0px;
-				position: relative;
-			}
-			
-			.video-container {
-				width: 38%;
-				height: 95%;
-				border: 0;
-				background-color: white;
-				margin-top: -18px;
-				text-align: right;
-			}
-			
-			.full-screen-container {
-				display: inline-block;
-				margin-top: -32px;
-			}
-			
-			.full-screen-text {
-				vertical-align: middle;
-				margin-top: -3px;
-			}
-			
-			.teamwork-container {
-				clear: both;
-				width: 80%;
-				height: 250px;
-				background-color: greenyellow;
-				margin: 30px auto 0px;
-			}
-			
-			.footer-container {
-				margin: 0px auto;
-				font-size: 14px;
-				background-color: #66a812;
-				color: #f5faf0;
-				height: 50px;
-				width: 1263px;
-				line-height: 50px;
-				text-align: center;
-			}
-		</style>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	/*common css*/
 
-	<body>
-		<div class='home-container'>
-			<div class="header-container">
-				<div class="header-title">
+	li {
+		list-style-type: none;
+	}
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-size: 18px;
+	}
+	/*common css end*/
+
+	.home-container {
+		width: 1263px;
+		margin: 0 auto;
+		padding: 0px;
+	}
+	/*header css start*/
+	.header-title {
+		width: 100%;
+		height: 50px;
+		background-color: rgba(0, 0, 0, .6);
+		line-height: 50px;
+	}
+
+	.header-title ul {
+		width: 500px;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: #fcf5d7;
+	}
+
+	.header-slider {
+		width: 100%;
+		height: 550px;
+	}
+
+	.header-slider ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.header-slider ul li {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.header-search {
+		text-align: center;
+	}
+
+	.header-search-left {
+		width: 50%;
+	}
+
+	.header-search-left ul {
+		width: 100%;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: row;
+		color: #fcf5d7;
+		background: red;
+		font-size: 14px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.header-search-left ul li {
+		width: 20%;
+	}
+	/*header css end*/
+
+	.content-container {
+		width: 100%;
+		margin: 40px auto 0;
+		text-align: center;
+	}
+
+	.about-us-zh {
+		width: 80px;
+		height: 80px;
+		background-color: #7cb930;
+		color: white;
+		font-size: 22px;
+		position: absolute;
+		left: 15%;
+		z-index: 1000;
+		margin-left: 5%;
+		margin-top: -5px;
+	}
+
+	.about-us-zh-about {
+		display: block;
+		margin-top: 7px;
+	}
+
+	.about-us-zh-us {
+		display: block;
+		margin-top: 2px;
+	}
+
+	.about-us-en {
+		font-size: 34px;
+		color: #d0d0d0;
+		text-align: left;
+		margin-left: 345px
+	}
+
+	.about-us-detail-container {
+		font-size: 17px;
+		width: 100%;
+		text-align: left;
+		display: flex;
+		line-height: 32px;
+	}
+
+	.about-us-detail {
+		width: 920px;
+		margin: 20px auto 0;
+		color: #1f1f1f;
+		font-weight: normal;
+	}
+
+	.green-color {
+		color: #7cb930;
+	}
+
+	.service-standard {
+		width: 1010px;
+		display: flex;
+		flex-direction: row;
+		margin: 0px auto;
+		justify-content: space-evenly;
+	}
+
+	.service-standard dl dt,
+	dd {
+		margin-top: 20px;
+	}
+
+	.service-standard dl dt {}
+
+	.service-standard dl dd:nth-child(2) {
+		margin-left: 0px;
+		font-size: 22px;
+	}
+
+	.service-standard dl dd:nth-child(3) {
+		line-height: 32px;
+		text-align: left;
+		font-size: 16px;
+	}
+
+	.home-middle-container {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.home-middle-right {
+		flex: 0.65;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		background-color: #f4f4f4;
+		height: 400px;
+	}
+
+	.home-middle-right-title {
+		flex: 0.24;
+		font-size: 24px;
+		font-weight: bold;
+		align-content: center;
+		line-height: 300%;
+	}
+
+	.home-middle-right-middle {
+		flex: 0.24;
+		margin-top: -30px;
+	}
+
+	.home-middle-right-content {
+		flex: 0.52;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0px;
+		position: relative;
+	}
+
+	.video-container {
+		width: 38%;
+		height: 95%;
+		border: 0;
+		background-color: white;
+		margin-top: -18px;
+		text-align: right;
+	}
+
+	.full-screen-container {
+		display: inline-block;
+		margin-top: -32px;
+	}
+
+	.full-screen-text {
+		vertical-align: middle;
+		margin-top: -3px;
+	}
+
+	.teamwork-container {
+		clear: both;
+		width: 80%;
+		height: 250px;
+		background-color: greenyellow;
+		margin: 30px auto 0px;
+	}
+
+	.footer-container {
+		margin: 0px auto;
+		font-size: 14px;
+		background-color: #66a812;
+		color: #f5faf0;
+		height: 50px;
+		width: 1263px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	<link href="./components/video-js/video-js.css" rel="stylesheet" type="text/css">
+</style>
+</head>
+
+<body>
+	<div class='home-container'>
+		<div class="header-container">
+			<div class="header-title">
+				<ul>
+					<li>嘻果首页</li>
+					<li><img src="img/else/logo.png" /></li>
+					<li>关于我们</li>
+					<li>产品服务</li>
+				</ul>
+			</div>
+
+			<div class="header-slider">
+				<div>
 					<ul>
-						<li>嘻果首页</li>
-						<li><img src="img/else/logo.png" /></li>
-						<li>关于我们</li>
-						<li>产品服务</li>
+						<li class="header-slider-first"><img src="img/main/reader1-1.jpg" width="100%" height="550px" /></li>
+						<li class="header-slider-seconrd"><img src="img/main/reader2-2.jpg" width="100%" height="550px" /></li>
 					</ul>
 				</div>
-
-				<div class="header-slider">
-					<div>
-						<ul>
-							<li class="header-slider-first"><img src="img/main/reader1-1.jpg" width="100%" height="550px" /></li>
-							<li class="header-slider-seconrd"><img src="img/main/reader2-2.jpg" width="100%" height="550px" /></li>
-						</ul>
-					</div>
-				</div>
+			</div>
 				<!--<div class="header-search">
 					<div class="header-search-left">
 						<ul>
@@ -275,8 +277,8 @@
 					<div style="flex:1;">
 						<input class="search-input" spaceholder="" style="width:240px;height: 24px;background-color: #d3d3d3;border:1px solid #d3d3d3;" />
 						<button class="search-btn" style="height: 26px;background-color: #fc9902;color:white;border:1px solid #fc9902;">
-        搜索
-      </button>
+							搜索
+						</button>
 					</div>
 				</div>
 			</div>
@@ -297,10 +299,10 @@
 					<div class="about-us-detail-container">
 						<div class="about-us-detail">
 							<b><span class="green-color">广州指猴互联网科技有限公司</span>，深耕水果行业,致力于整合全球优质的水果资；
-            构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
-            我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
-            我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
-          </b>
+								构建高效水果供应服务链；使用移动互联网技术，为合作伙伴提供高质量、高价值、高效率的新零售服务。
+								我们将兼具线上和线下的能力。线上，能研发、运营新零售供应链系统；线下，能搭建分销,直销渠道和提供冷链流通能力.目前我们已经在中国中部、南部、西南建立线下服务.
+								我们的文化为"学校"文化，成长为主线，强调开放、高效、沟通。
+							</b>
 						</div>
 					</div>
 					<div class="quality-service">
@@ -335,50 +337,41 @@
 						</div>
 						<div class="home-middle-right-content">
 							<div class="video-container">
-								<video id="myvideo1" :src="video[0].videoSrc" :poster="video[0].videoImg" :muted="video[0].muteStatus" height="100%" width="100%">
+								<video width="320" height="240" controls autoplay >
+									<!-- <source src="movie.ogg" type="video/ogg" /> -->
+									<source src="./video/video-01.mp4" type="video/mp4" />
+									<!-- <source src="movie.webm" type="video/webm" /> -->
+									<!-- <object data="movie.mp4" width="320" height="240" /> -->
+									<!-- <embed width="320" height="240" src="movie.swf" /></object> -->
 									your browser does not support the video tag
 								</video>
-								<!--<img :src="playStatus" width="80" height="80" style="position:absolute;left:23%;top:30%;"/>-->
-								<!--
-            <span class="ico ico-sound" :class="{ active: video[0].isMute }" v-on:click="closeSoundClick(0)">静音</span>-->
-
-								<span class="ico ico-skip"></span>
-								<span class="" v-on:click="showFullScreen(0)" class="full-screen-container"><img
-              src="img/else/fullscreem.jpg" height="22"
-              width="22"
-              class="full-screen-text"/>&nbsp;全屏</span>
-								<span class="ico ico-video" :class="{ hide: video[0].isPlay }" v-on:click="playClick(0)">{{video[0].playOrPause}}</span>
-
 							</div>
 							<div class="video-container">
-								<video id="myvideo2" :src="video[1].videoSrc" :poster="video[1].videoImg" :muted="video[1].muteStatus" height="100%" width="100%">
-									your browser does not support the video tag
-								</video>
-								<!--
-            <span class="ico ico-sound" :class="{ active: video[1].isMute }" v-on:click="closeSoundClick(1)">静音</span>-->
-								<span class="ico ico-skip"></span>
-								<span class="" v-on:click="showFullScreen(1)"><img src="img/else/fullscreem.jpg" height="22"
-                                                               width="22"
-                                                               class="full-screen-text"/>&nbsp;全屏</span>
-								<span class="ico ico-video" :class="{ hide: video[1].isPlay }" v-on:click="playClick(1)">{{video[1].playOrPause}}</span>
+								<!-- <video id="myvideo2" src="video[1].videoSrc" poster="video[1].videoImg" muted="video[1].muteStatus" height="100%" width="100%"> -->
+									<video width="320" height="240" controls autoplay >
+										<source src="./video/video-02.mp4" type="video/mp4" />
+										your browser does not support the video tag
+									</video>
+								</div>
+
 							</div>
+
 						</div>
 					</div>
+					<div class="teamwork-container">
+						<div><img src="img/else/m02.png" /></div>
+					</div>
 				</div>
-				<div class="teamwork-container">
-					<div><img src="img/else/m02.png" /></div>
+				<div class="footer-container">
+					广州指猴互联网科技有限公司 CopyRight 2015-2018 okguo.com 版权所有 粤ICP备15027534号-1
 				</div>
 			</div>
-			<div class="footer-container">
-				广州指猴互联网科技有限公司 CopyRight 2015-2018 okguo.com 版权所有 粤ICP备15027534号-1
-			</div>
-		</div>
-	</body>
-	<script>
-		function showHeaderSlider() {
-			document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
-		}
-		showHeaderSlider();
-	</script>
+		</body>
+		<script>
+			function showHeaderSlider() {
+				document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
+			}
+			showHeaderSlider();
+		</script>
 
-</html>
+		</html>
