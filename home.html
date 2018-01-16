@@ -337,41 +337,33 @@
 						</div>
 						<div class="home-middle-right-content">
 							<div class="video-container">
-								<video width="320" height="240" controls autoplay >
-									<!-- <source src="movie.ogg" type="video/ogg" /> -->
-									<source src="./video/video-01.mp4" type="video/mp4" />
-									<!-- <source src="movie.webm" type="video/webm" /> -->
-									<!-- <object data="movie.mp4" width="320" height="240" /> -->
-									<!-- <embed width="320" height="240" src="movie.swf" /></object> -->
+								<!-- controls控制台 loop循环播放 autoplay自动播放-->
+								<video src="./video/video-02.mp4"  controls loop>
 									your browser does not support the video tag
 								</video>
 							</div>
 							<div class="video-container">
-								<!-- <video id="myvideo2" src="video[1].videoSrc" poster="video[1].videoImg" muted="video[1].muteStatus" height="100%" width="100%"> -->
-									<video width="320" height="240" controls autoplay >
-										<source src="./video/video-02.mp4" type="video/mp4" />
-										your browser does not support the video tag
-									</video>
-								</div>
-
+								<video src="./video/video-01.mp4" controls loop>
+									your browser does not support the video tag
+								</video>
 							</div>
-
 						</div>
 					</div>
-					<div class="teamwork-container">
-						<div><img src="img/else/m02.png" /></div>
-					</div>
 				</div>
-				<div class="footer-container">
-					广州指猴互联网科技有限公司 CopyRight 2015-2018 okguo.com 版权所有 粤ICP备15027534号-1
+				<div class="teamwork-container">
+					<div><img src="img/else/m02.png" /></div>
 				</div>
 			</div>
-		</body>
-		<script>
-			function showHeaderSlider() {
-				document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
-			}
-			showHeaderSlider();
-		</script>
+			<div class="footer-container">
+				广州指猴互联网科技有限公司 CopyRight 2015-2018 okguo.com 版权所有 粤ICP备15027534号-1
+			</div>
+		</div>
+	</body>
+	<script>
+		function showHeaderSlider() {
+			document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
+		}
+		showHeaderSlider();
+	</script>
 
-		</html>
+	</html>
