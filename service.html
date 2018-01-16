@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*common css*/
+			
+			li {
+				list-style-type: none;
+			}
+			
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-size: 18px;
+			}
+			/*common css end*/
+			
+			.service-container {
+				width: 1263px;
+				margin: 0 auto;
+				padding: 0px;
+			}
+			/*header css start*/
+			
+			.header-title {
+				width: 100%;
+				height: 50px;
+				background-color: rgba(0, 0, 0, .6);
+				line-height: 50px;
+			}
+			
+			.header-title ul {
+				width: 500px;
+				margin: 0px auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				color: #fcf5d7;
+			}
+			
+			.header-slider {
+				width: 100%;
+				height: 550px;
+			}
+			
+			.header-slider ul {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.header-slider ul li {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.header-search {
+				text-align: center;
+			}
+			
+			.header-search-left {
+				width: 50%;
+			}
+			
+			.header-search-left ul {
+				width: 100%;
+				margin: 0px auto;
+				display: flex;
+				flex-direction: row;
+				color: #fcf5d7;
+				background: red;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.header-search-left ul li {
+				width: 20%;
+			}
+			
+			.service-product {
+				width: 100%;
+				display: flex;
+			}
+			
+			.import-product {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			
+			.import-product dl {
+				width: 250px;
+			}
+			
+			.import-product dl dt img {
+				width: 250px;
+				height: 250px;
+			}
+			.footer-container {
+				margin: 0px auto;
+				font-size: 14px;
+				background-color: #66a812;
+				color: #f5faf0;
+				height: 50px;
+				width: 1263px;
+				line-height: 50px;
+				text-align: center;
+			}
+			/*header css end*/
+		</style>
+	</head>
+
+	<body>
+		<div class="service-container">
+			<div class="header-container">
+				<div class="header-title">
+					<ul>
+						<li>嘻果首页</li>
+						<li><img src="img/else/logo.png" /></li>
+						<li>关于我们</li>
+						<li>产品服务</li>
+					</ul>
+				</div>
+
+				<div class="header-slider">
+					<div>
+						<ul>
+							<li class="header-slider-first"><img src="img/main/reader1-1.jpg" width="100%" height="550px" /></li>
+							<li class="header-slider-seconrd"><img src="img/main/reader2-2.jpg" width="100%" height="550px" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--<div class="header-search">
+					<div class="header-search-left">
+						<ul>
+							<li>热门关键字</li>
+							<li>有机水果</li>
+							<li>有机水果配送</li>
+							<li>水果配送加盟</li>
+							<li>有机水果供应商</li>
+						</ul>
+					</div>
+					<div class="header-search-right">aa</div>
+				</div>-->
+				<div class="header-search" style="clear: both;display: flex;flex-direction: row;height: 70px;line-height: 75px;border-bottom:1px solid #eaeaea;">
+					<div style="font-size:15px;color:#8f8f8f;flex:1;">热门关键字 有机水果 有机水果配送 水果配送加盟 有机水果供应商</div>
+					<div style="flex:1;">
+						<input class="search-input" spaceholder="" style="width:240px;height: 24px;background-color: #d3d3d3;border:1px solid #d3d3d3;" />
+						<button class="search-btn" style="height: 26px;background-color: #fc9902;color:white;border:1px solid #fc9902;">
+        搜索
+      </button>
+					</div>
+				</div>
+			</div>
+			<div class="service-product-container">
+				<div style="text-align: center;font-size:32px;margin:30px auto;">进口水果</div>
+				<div>
+					<div class="import-product">
+						<!--<span>进口水果</span>-->
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+					</div>
+					<div class="import-product">
+						<!--<span>进口水果</span>-->
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="service-product-container">
+				<div style="text-align: center;font-size:32px;margin:30px auto;">进口水果</div>
+				<div>
+					<div class="import-product">
+						<!--<span>进口水果</span>-->
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+					</div>
+					<div class="import-product">
+						<!--<span>进口水果</span>-->
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+						<dl>
+							<dt><img src='img/product/import/干尧-z.jpg'/></dt>
+							<dd>干尧</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="footer-container">
+				广州指猴互联网科技有限公司 CopyRight 2015-2018 okguo.com 版权所有 粤ICP备15027534号-1
+			</div>
+		</div>
+	</body>
+	<script>
+		function showHeaderSlider() {
+			document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
+		}
+		showHeaderSlider();
+	</script>
+
+</html>
