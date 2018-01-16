@@ -6,11 +6,15 @@
 		<title></title>
 		<style>
 			body {
+				margin: 0px;
 				padding: 0px;
-				margin: 0;
+				font-size: 18px;
 			}
 			li{
 				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
 			}
 			.about-container {
 				width: 1263px;
@@ -19,10 +23,15 @@
 			}
 			
 			.header-title {
-				width: 100%;
-				height: 50px;
-				background-color: rgba(0, 0, 0,0.3);
-				line-height: 50px;
+				width: 1263px;
+				height: 60px;
+				background-color: rgba(0, 0, 0,0.5);
+				line-height: 60px;
+				position: fixed;
+				left: 0;
+				top:0;
+				right: 0;
+				margin:0 auto;
 			}
 			
 			.header-title ul {
@@ -31,6 +40,9 @@
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
+				color: #fcf5d7;
+			}
+			.header-title ul li a{
 				color: #fcf5d7;
 			}
 			.header-search {
@@ -66,6 +78,12 @@
 				line-height: 50px;
 				text-align: center;
 			}
+			.text_conten{
+				margin-left: 20px;
+			}
+			.fruit-display{
+				margin-bottom: 50px;
+			}
 		</style>
 	</head>
 
@@ -75,10 +93,10 @@
 				<div class="header-title-container">
 					<div class="header-title">
 						<ul>
-							<li>嘻果首页</li>
-							<li><img src="img/else/logo.png" /></li>
-							<li>关于我们</li>
-							<li>产品服务</li>
+							<li><a href="home.html">嘻果首页</a></li>
+							<li style="margin-top:7px;"><a href="home.html"><img src="img/else/logo.png" /></a></li>
+							<li><a href="about.html">关于我们</a></li>
+							<li><a href="service.html">产品服务</a></li>
 						</ul>
 					</div>
 				</div>
