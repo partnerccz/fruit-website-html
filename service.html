@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>产品服务</title>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <style>
         /*common css*/
 
@@ -63,15 +66,6 @@
             height: 550px;
         }
 
-        .header-slider ul {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .header-slider ul li {
-            margin: 0px;
-            padding: 0px;
-        }
 
         .header-search {
             text-align: center;
@@ -161,13 +155,22 @@
         </div>
 
         <div class="header-slider">
-            <div>
-                <ul>
-                    <li class="header-slider-first"><img src="img/main/reader1-1.jpg" width="100%" height="550px"/></li>
-                    <li class="header-slider-seconrd"><img src="img/main/reader2-2.jpg" width="100%" height="550px"/>
-                    </li>
-                </ul>
+            <div class="reader_slide">
+                <div class="slide"><img src="img/main/reader1-1.jpg" width="100%" height="550px" /></div>
+                <div class="slide"><img src="img/main/reader2-2.jpg" width="100%" height="550px" /></div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.reader_slide').bxSlider({
+                        slideWidth: 1263,
+                        minSlides: 1,
+                        maxSlides: 1,
+                        startSlides: 0,
+                        slideMargin: 10,
+                        mode: 'fade'
+                    });
+                });
+            </script>
         </div>
         <!--<div class="header-search">
             <div class="header-search-left">
@@ -287,18 +290,21 @@
 </body>
 
 <script type="application/javascript" src="js/lazyLoad.js"></script>
+
 <script>
     window.onload = function () {
         // 启动懒加载
         new Lazyload("do");
-        showHeaderSlider();
+        $('.reader_slide').bxSlider({
+            slideWidth: 1263,
+            minSlides: 1,
+            maxSlides: 1,
+            ticker: true,
+            startSlides: 0,
+            slideMargin: 10,
+            mode: 'fade'
+        });
     }
-
-    function showHeaderSlider() {
-        document.getElementsByClassName('header-slider-first')[0].style.display = 'none'
-    }
-
-    showHeaderSlider();
 </script>
 
 </html>
