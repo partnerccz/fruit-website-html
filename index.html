@@ -1,280 +1,347 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8">
-	<title>广州指猴互联网科技有限公司</title>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
-	<style>
-	/*common css*/
+	<head>
+		<meta charset="UTF-8">
+		<title>广州指猴互联网科技有限公司</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+		<style>
+			/*common css*/
+			
+			li {
+				list-style-type: none;
+			}
+			
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-size: 18px;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			/*common css end*/
+			
+			.home-container {
+				width: 1263px;
+				margin: 0 auto;
+				padding: 0px;
+			}
+			/*header css start*/
+			
+			.header-title {
+				width: 1263px;
+				height: 60px;
+				background-color: rgba(0, 0, 0, 0.5);
+				line-height: 60px;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 5;
+			}
+			
+			.header-title ul {
+				width: 500px;
+				margin: 0px auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			
+			.header-title ul li a {
+				color: #fcf5d7;
+			}
+			
+			.header-slider {
+				width: 100%;
+				height: 550px;
+			}
+			
+			.header-search {
+				text-align: center;
+			}
+			
+			.header-search-left {
+				width: 50%;
+			}
+			
+			.header-search-left ul {
+				width: 100%;
+				margin: 0px auto;
+				display: flex;
+				flex-direction: row;
+				color: #fcf5d7;
+				background: red;
+				font-size: 14px;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.header-search-left ul li {
+				width: 20%;
+			}
+			/*header css end*/
+			
+			.content-container {
+				width: 100%;
+				margin: 40px auto 0;
+				text-align: center;
+			}
+			
+			.about-us-zh {
+				width: 80px;
+				height: 80px;
+				background-color: #7cb930;
+				color: white;
+				font-size: 22px;
+				position: absolute;
+				left: 15%;
+				z-index: 1000;
+				margin-left: 5%;
+				margin-top: -5px;
+			}
+			
+			.about-us-zh-about {
+				display: block;
+				margin-top: 7px;
+			}
+			
+			.about-us-zh-us {
+				display: block;
+				margin-top: 2px;
+			}
+			
+			.about-us-en {
+				font-size: 34px;
+				color: #d0d0d0;
+				text-align: left;
+				margin-left: 345px
+			}
+			
+			.about-us-detail-container {
+				font-size: 17px;
+				width: 100%;
+				text-align: left;
+				display: flex;
+				line-height: 32px;
+			}
+			
+			.about-us-detail {
+				width: 920px;
+				margin: 20px auto 0;
+				color: #1f1f1f;
+				font-weight: normal;
+			}
+			
+			.green-color {
+				color: #7cb930;
+			}
+			
+			.service-standard {
+				width: 1010px;
+				display: flex;
+				flex-direction: row;
+				margin: 0px auto;
+				justify-content: space-evenly;
+			}
+			
+			.service-standard dl dt,
+			dd {
+				margin-top: 20px;
+			}
+			
+			.service-standard dl dt {}
+			
+			.service-standard dl dd:nth-child(2) {
+				margin-left: 0px;
+				font-size: 22px;
+			}
+			
+			.service-standard dl dd:nth-child(3) {
+				line-height: 32px;
+				text-align: left;
+				font-size: 16px;
+			}
+			
+			.home-middle-container {
+				margin-top: 60px;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			.home-middle-right {
+				flex: 0.65;
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				background-color: #f4f4f4;
+				height: 400px;
+			}
+			
+			.home-middle-right-title {
+				flex: 0.24;
+				font-size: 24px;
+				font-weight: bold;
+				align-content: center;
+				line-height: 300%;
+			}
+			
+			.home-middle-right-middle {
+				flex: 0.24;
+				margin-top: -30px;
+			}
+			
+			.home-middle-right-content {
+				flex: 0.52;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin: 0px;
+				position: relative;
+			}
+			
+			.video-container {
+				width: 38%;
+				height: 95%;
+				border: 0;
+				background-color: white;
+				margin-top: -18px;
+				text-align: right;
+			}
+			
+			.full-screen-container {
+				display: inline-block;
+				margin-top: -32px;
+			}
+			
+			.full-screen-text {
+				vertical-align: middle;
+				margin-top: -3px;
+			}
+			
+			.teamwork-container {
+				clear: both;
+				width: 80%;
+				height: 250px;
+				margin: 30px auto 0px;
+			}
+			
+			.footer-container {
+				margin: 0px auto;
+				font-size: 14px;
+				background-color: #66a812;
+				color: #f5faf0;
+				height: 50px;
+				width: 1263px;
+				line-height: 50px;
+				text-align: center;
+			}
+			
+			.showStr {
+				position: absolute;
+				left: 50%;
+				top: 380px;
+				margin-left: -173px;
+				z-index: 10000;
+				font-size: 28px;
+				color: #ffffff;
+				letter-spacing: 5px;
+			}
+			
+			.str {
+				display: block;
+				border-top: 1px solid #ffffff;
+				border-bottom: 1px solid #ffffff;
+				padding: 5px 25px;
+				margin-bottom: 20px;
+				line-height: 34px;
+			}
+			
+			.str_img {
+				margin-left: 30px;
+			}
+			
+			.showStr2 {
+				position: absolute;
+				left: 50%;
+				top: 340px;
+				z-index: 10000;
+				font-size: 22px;
+				color: #ffffff;
+				letter-spacing: 5px;
+				margin-left: -250px;
+			}
+			
+			.str2 {
+				display: block;
+				border-top: 1px solid #ffffff;
+				border-bottom: 1px solid #ffffff;
+				padding: 5px 25px;
+				margin-bottom: 20px;
+				line-height: 34px;
+			}
+		</style>
+	</head>
 
-	li {
-		list-style-type: none;
-	}
+	<body>
+		<div class='home-container' id="lazy">
+			<div class="header-container">
+				<div class="header-title">
+					<ul>
+						<li>
+							<a href="index.html">嘻果首页</a>
+						</li>
+						<li style="margin-top:7px;">
+							<a href="index.html"><img src="img/loading/loading.gif" data-src="img/else/logo.png" /></a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+						<li>
+							<a href="service.html">产品服务</a>
+						</li>
+					</ul>
+				</div>
 
-	body {
-		margin: 0px;
-		padding: 0px;
-		font-size: 18px;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	/*common css end*/
-
-	.home-container {
-		width: 1263px;
-		margin: 0 auto;
-		padding: 0px;
-	}
-	/*header css start*/
-	.header-title {
-		width: 1263px;
-		height: 60px;
-		background-color: rgba(0, 0, 0,0.5);
-		line-height: 60px;
-		position: fixed;
-		left: 0;
-		top:0;
-		right: 0;
-		margin:0 auto;
-		z-index: 5;
-	}
-
-	.header-title ul {
-		width: 500px;
-		margin: 0px auto;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.header-title ul li a{
-		color: #fcf5d7;
-	}
-
-	.header-slider {
-		width: 100%;
-		height: 550px;
-	}
-
-
-	.header-search {
-		text-align: center;
-	}
-
-	.header-search-left {
-		width: 50%;
-	}
-
-	.header-search-left ul {
-		width: 100%;
-		margin: 0px auto;
-		display: flex;
-		flex-direction: row;
-		color: #fcf5d7;
-		background: red;
-		font-size: 14px;
-		height: 50px;
-		line-height: 50px;
-	}
-
-	.header-search-left ul li {
-		width: 20%;
-	}
-	/*header css end*/
-
-	.content-container {
-		width: 100%;
-		margin: 40px auto 0;
-		text-align: center;
-	}
-
-	.about-us-zh {
-		width: 80px;
-		height: 80px;
-		background-color: #7cb930;
-		color: white;
-		font-size: 22px;
-		position: absolute;
-		left: 15%;
-		z-index: 1000;
-		margin-left: 5%;
-		margin-top: -5px;
-	}
-
-	.about-us-zh-about {
-		display: block;
-		margin-top: 7px;
-	}
-
-	.about-us-zh-us {
-		display: block;
-		margin-top: 2px;
-	}
-
-	.about-us-en {
-		font-size: 34px;
-		color: #d0d0d0;
-		text-align: left;
-		margin-left: 345px
-	}
-
-	.about-us-detail-container {
-		font-size: 17px;
-		width: 100%;
-		text-align: left;
-		display: flex;
-		line-height: 32px;
-	}
-
-	.about-us-detail {
-		width: 920px;
-		margin: 20px auto 0;
-		color: #1f1f1f;
-		font-weight: normal;
-	}
-
-	.green-color {
-		color: #7cb930;
-	}
-
-	.service-standard {
-		width: 1010px;
-		display: flex;
-		flex-direction: row;
-		margin: 0px auto;
-		justify-content: space-evenly;
-	}
-
-	.service-standard dl dt,
-	dd {
-		margin-top: 20px;
-	}
-
-	.service-standard dl dt {}
-
-	.service-standard dl dd:nth-child(2) {
-		margin-left: 0px;
-		font-size: 22px;
-	}
-
-	.service-standard dl dd:nth-child(3) {
-		line-height: 32px;
-		text-align: left;
-		font-size: 16px;
-	}
-
-	.home-middle-container {
-		margin-top: 60px;
-		display: flex;
-		flex-direction: row;
-	}
-
-	.home-middle-right {
-		flex: 0.65;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		background-color: #f4f4f4;
-		height: 400px;
-	}
-
-	.home-middle-right-title {
-		flex: 0.24;
-		font-size: 24px;
-		font-weight: bold;
-		align-content: center;
-		line-height: 300%;
-	}
-
-	.home-middle-right-middle {
-		flex: 0.24;
-		margin-top: -30px;
-	}
-
-	.home-middle-right-content {
-		flex: 0.52;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0px;
-		position: relative;
-	}
-
-	.video-container {
-		width: 38%;
-		height: 95%;
-		border: 0;
-		background-color: white;
-		margin-top: -18px;
-		text-align: right;
-	}
-
-	.full-screen-container {
-		display: inline-block;
-		margin-top: -32px;
-	}
-
-	.full-screen-text {
-		vertical-align: middle;
-		margin-top: -3px;
-	}
-
-	.teamwork-container {
-		clear: both;
-		width: 80%;
-		height: 250px;
-		margin: 30px auto 0px;
-	}
-
-	.footer-container {
-		margin: 0px auto;
-		font-size: 14px;
-		background-color: #66a812;
-		color: #f5faf0;
-		height: 50px;
-		width: 1263px;
-		line-height: 50px;
-		text-align: center;
-	}
-</style>
-</head>
-
-<body>
-	<div class='home-container' id="lazy">
-		<div class="header-container">
-			<div class="header-title">
-				<ul>
-					<li><a href="index.html">嘻果首页</a></li>
-					<li style="margin-top:7px;"><a href="index.html"><img src="img/loading/loading.gif" data-src="img/else/logo.png" /></a></li>
-					<li><a href="about.html">关于我们</a></li>
-					<li><a href="service.html">产品服务</a></li>
-				</ul>
-			</div>
-
-			<div class="header-slider">
+				<div class="header-slider">
 					<div class="reader_slide">
-                        <div class="slide"><img src="img/loading/loading.gif" data-src="img/main/reader1-1.jpg" width="100%" height="550px" /></div>
-                        <div class="slide"><img  src="img/main/reader2-2.jpg" width="100%" height="550px" /></div>
-                    </div>
+						<div class="slide">
+							<img src="img/loading/loading.gif" data-src="img/main/reader1-1.jpg" width="100%" height="550px" />
+							<div class="showStr">
+								<span class="str">与合作伙伴携手共赢</span>
+								<img class="str_img" src="img/loading/loading.gif" data-src="img/else/m01.png" />
+							</div>
+						</div>
+						<div class="slide">
+							<img src="img/main/reader2-2.jpg" width="100%" height="550px" />
+							<div class="showStr2">
+								<div class="str2">
+									<span style="display: block">整合全球优质资源，构建高效供应链，</span>
+									<span style="display: block">推动现代农业的发展，实现产业报国。</span>
+								</div>
+								<img src="img/else/m01.png" style="margin-left:120px;margin-top: 10px;"/>
+							</div>
+						</div>
+					</div>
 					<script type="text/javascript">
-                        $(document).ready(function(){
-                            $('.reader_slide').bxSlider({
-                                slideWidth: 1263,
-                                minSlides: 1,
-                                maxSlides: 1,
-                                startSlides: 0,
-                                slideMargin: 10,
-                                mode: 'fade'
-                            });
-                        });
+						$(document).ready(function() {
+							$('.reader_slide').bxSlider({
+								slideWidth: 1263,
+								minSlides: 1,
+								maxSlides: 1,
+								startSlides: 0,
+								slideMargin: 10,
+								mode: 'fade',
+								auto: true
+							});
+						});
 					</script>
-			</div>
+				</div>
 				<!--<div class="header-search">
 					<div class="header-search-left">
 						<ul>
@@ -359,7 +426,7 @@
 								</video>
 							</div>
 							<div class="video-container">
-								<video src="./video/video-02.mp4"  preload="metadata" poster="./video/video-01.png" preload="none" controls loop>
+								<video src="./video/video-02.mp4" preload="metadata" poster="./video/video-01.png" preload="none" controls loop>
 									your browser does not support the video tag
 								</video>
 							</div>
@@ -377,17 +444,17 @@
 						<div class="slide"><img src="img/loading/loading.gif" data-src="img/else/teamwork06.jpg" style="height: 150px"></div>
 					</div>
 					<script type="text/javascript">
-                        $(document).ready(function(){
-                            $('.slideClass').bxSlider({
-                                slideWidth: 150,
-                                minSlides: 5,
-                                maxSlides: 5,
-                                ticker: true,
-                                speed: 15000,
-                                startSlides: 0,
-                                slideMargin: 10
-                            });
-                        });
+						$(document).ready(function() {
+							$('.slideClass').bxSlider({
+								slideWidth: 150,
+								minSlides: 5,
+								maxSlides: 5,
+								ticker: true,
+								speed: 15000,
+								startSlides: 0,
+								slideMargin: 10
+							});
+						});
 					</script>
 				</div>
 			</div>
@@ -397,11 +464,11 @@
 		</div>
 	</body>
 
-	<script	type="application/javascript" src="js/lazyLoad.js"></script>
+	<script type="application/javascript" src="js/lazyLoad.js"></script>
 	<script>
-        window.onload = function() {
-            new Lazyload("lazy")
-        }
+		window.onload = function() {
+			new Lazyload("lazy")
+		}
 	</script>
 
-	</html>
+</html>
