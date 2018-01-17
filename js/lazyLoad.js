@@ -50,8 +50,11 @@ Lazyload.prototype = {
                     var i = this.imgs.length;
                     for(i--; i >= 0; i--) {
                         if(this.shouldShow(i)) {
-                            this.imgs[i].src = this.imgs[i].getAttribute("data-src");
-                            this.imgs.splice(i, 1);
+                            // 添加判断，避免非懒加载图片被强制替换成null
+                            if(this.imgs[i].getAttribute("data-src") != null){
+                                this.imgs[i].src = this.imgs[i].getAttribute("data-src");
+                                this.imgs.splice(i, 1);
+                            }
                         }
                     }
                 },
