@@ -204,19 +204,22 @@
             flex: 0.52;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            /*justify-content: space-evenly;*/
+            justify-content: space-around;
             margin: 0px;
             position: relative;
         }
-
         .video-container {
             width: 38%;
             height: 95%;
+            /*width:322px;*/
+            /*height: 244px;*/
             border: 0;
             background-color: white;
             margin-top: -18px;
             text-align: right;
         }
+
 
         .full-screen-container {
             display: inline-block;
@@ -423,14 +426,14 @@
                 <div class="home-middle-right-content">
                     <div class="video-container">
                         <!-- controls控制台 loop循环播放 autoplay自动播放-->
-                        <video src="./video/video-01.mp4" preload="none" poster="./video/video-01.jpg"
+                        <video src="./video/video-01.mp4" width="100%" height="100%" preload="none" poster="./video/video-01.jpg"
                                preload="none" controls loop>
                             <!-- <video src="./video/video-01.mp4" poster="video/video-01.png" preload="none"  controls loop> -->
                             your browser does not support the video tag
                         </video>
                     </div>
                     <div class="video-container">
-                        <video src="./video/video-02.mp4" preload="none" poster="./video/video-02.jpg"
+                        <video src="./video/video-02.mp4" width="100%;" height="100%" preload="none" poster="./video/video-02.jpg"
                                preload="none" controls loop>
                             your browser does not support the video tag
                         </video>
