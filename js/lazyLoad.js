@@ -63,6 +63,10 @@ Lazyload.prototype = {
                     var img = this.imgs[i];
                     scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                     scrollBottom = scrollTop + document.documentElement.clientHeight;
+
+                    //设置图片加载位置在滚动窗口的下方
+                    scrollBottom += 300000;
+
                     imgTop = this.pageY(img);
                     imgBottom = imgTop + img.offsetHeight;
                     if((imgTop > scrollTop && imgTop < scrollBottom) || (imgBottom > scrollTop && imgBottom < scrollBottom)) {
